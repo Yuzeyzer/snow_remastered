@@ -429,7 +429,7 @@ header {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   right: 20%;
-  min-width: 15%;
+  width: 15%;
 }
 
 .room__img .room__img_star svg {
