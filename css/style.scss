@@ -313,7 +313,8 @@ body {
          right: 20%;
          min-width: 15%;
          svg {
-             max-width: 100%;
+             width: 100%;
+             border: 2px solid red;
          }
      }
  }
