@@ -66,10 +66,10 @@
         loop: true,
         responsive: {
             1366: {
-                items:4
+                items:5
             },
             1024: {
-                items: 3
+                items: 4
             },
             768: {
                 items: 3

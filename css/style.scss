@@ -283,10 +283,6 @@ body {
      padding: 17rem 0;
      background: url(../images/Rectangle.png) center no-repeat;
      background-size: cover;
-     text-align: center;
-     svg {
-         fill: rgba(255,255,255,0.95);
-     }
  }
  #hostel-info .container .title {
      text-align: center;
@@ -294,52 +290,39 @@ body {
      text-transform: uppercase;
      font-size: 3.9rem;
  }
- #hostel-info .container .row .col-4 {
-     padding:5rem 6rem 1rem 0;
-     width: 35%;
-     text-align: right;
- }
- #hostel-info .container .row .Snow {
+.Snow {
      color:#00afef ;
  }
- #hostel-info .container .row .col-4 h4 {
-     text-transform: uppercase;
-     color: #373435;
-     font-size: 5rem;
-     line-height: 6rem;
-     letter-spacing: 2rem;
-     text-align: right;
- }
- #hostel-info .container .row .reserve {
-     margin-top: 5rem;
-     color: #fff;
-     font-size: 2.5rem;
-     padding: 1rem 4rem 0 4rem;
+ #hostel-info .container .title-info {
      text-align: center;
-     text-transform: uppercase;
-     min-height: 5rem;
-     background-color: #373435;
-     border-radius: 0.6rem;
+     color: #373435;
+     font-size: 1.9rem;
+     line-height: 6rem;
  }
- #hostel-info .container .row .col-8 {
+ #hostel-info .container .row .col-12 {
      padding-top: 4rem;
-     width: 65%;
  }
- #hostel-info .container .row .col-8 .row {
-     flex-wrap: wrap;
+ .room__img {
+     .room__img_star {
+         padding: 0.5rem;
+         background-color: #FFCA4D ;
+         border-radius: 50%;
+         position: absolute;
+         bottom: 0;
+         transform: translateY(50%);
+         right: 20%;
+         min-width: 15%
+     }
  }
- #hostel-info .container .row .col-8 .col-3  {
-     padding: 1rem ;
-     width: 25%;
+ #hostel-info .container .row .col-12 .hostel-items {
+     text-align: center;
+     margin: 1.5rem;
  }
- #hostel-info .container .row .col-8 .hostel-items {
-     margin: 1rem;
- }
- #hostel-info .container .row .col-8 .hostel-items .items-title {
+ #hostel-info .container .row .col-12 .hostel-items .items-title {
      margin: 1rem 0;
      color: #00afef!important;
  }
- #hostel-info .container .row .col-8 .row .hostel-items .text {
+ #hostel-info .container .row .col-12 .row .hostel-items .text {
      color: #373435;
      font-size: 1.4rem;
  }
