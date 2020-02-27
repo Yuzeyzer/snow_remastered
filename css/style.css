@@ -409,7 +409,7 @@ header {
 .title::before {
   content: '';
   position: absolute;
-  width: 15%;
+  max-width: 14rem;
   height: 0.3rem;
   background-color: #00afef;
   right: 0;
