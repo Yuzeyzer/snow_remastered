@@ -950,6 +950,14 @@ footer .container .row {
   .logo {
     width: 25%;
   }
+  .nav.sticky {
+    height: auto;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    background-color: transparent;
+  }
   .mobile__btn {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -967,15 +975,17 @@ footer .container .row {
   .nav-bottom {
     background-color: #fff !important;
     height: 0 !important;
+    padding: 0 !important;
   }
-  .nav.sticky {
-    height: 0 !important;
-    display: none !important;
+  .logo-img {
+    height: 100%;
+    max-width: 100%;
+    text-align: left;
   }
   .nav .nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -993,14 +1003,10 @@ footer .container .row {
             transform: translateX(150%);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    z-index: 999;
   }
   .nav .nav-list li {
     margin-top: 5rem;
-  }
-  .logo-img {
-    height: 100%;
-    max-width: 100%;
-    text-align: left;
   }
 }
 
