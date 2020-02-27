@@ -433,7 +433,7 @@ header {
 }
 
 .room__img .room__img_star svg {
-  width: 100%;
+  max-width: 3rem;
   border: 2px solid red;
 }
 
