@@ -432,6 +432,10 @@ header {
   min-width: 15%;
 }
 
+.room__img .room__img_star svg {
+  max-width: 100%;
+}
+
 #hostel-info .container .row .col-12 .hostel-items {
   text-align: center;
   margin: 1.5rem;

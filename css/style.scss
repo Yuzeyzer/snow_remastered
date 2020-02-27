@@ -311,7 +311,10 @@ body {
          bottom: 0;
          transform: translateY(50%);
          right: 20%;
-         min-width: 15%
+         min-width: 15%;
+         svg {
+             max-width: 100%;
+         }
      }
  }
  #hostel-info .container .row .col-12 .hostel-items {
