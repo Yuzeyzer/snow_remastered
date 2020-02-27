@@ -9,7 +9,7 @@ body {
  }
  .h100 {
      height: 100%;
- }             /*End*/
+ }           /*End*/
  header {
      width: 100%;
      max-height: 15rem;
@@ -284,20 +284,32 @@ body {
      background: url(../images/Rectangle.png) center no-repeat;
      background-size: cover;
  }
- #hostel-info .container .title {
+.title {
+     position: relative;
      text-align: center;
      color: #373435;
      text-transform: uppercase;
      font-size: 3.9rem;
+     &::before{
+         content: '';
+         position: absolute;
+         width: 20%;
+         height: 0.3rem;
+         background-color: #00afef;
+         right: 0;
+         left: 0;
+         bottom: -1.4rem;
+         margin: auto;
+     }
  }
 .Snow {
      color:#00afef ;
  }
- #hostel-info .container .title-info {
+.title-info {
      text-align: center;
-     color: #373435;
-     font-size: 1.9rem;
-     line-height: 6rem;
+     color: rgba(0,0,0,0.5);
+     font-size: 1.6rem;
+     margin: 3rem auto;
  }
  #hostel-info .container .row .col-12 {
      padding-top: 4rem;
@@ -348,7 +360,7 @@ body {
             transform: scale(1);
             background: url(../images/bg-1.jpeg) center center no-repeat;
             background-size: cover;
-            height:60rem;
+            height:80vh;
             width: 0%;
             z-index: 2;
             .hero__content_img_item {
@@ -396,96 +408,6 @@ body {
 .snow-color {
     color: #00afef;
 }
-// #hero .booking {
-//     position: absolute;
-//     top: 40%;
-//     right: 15%;
-//     width: 30%;
-//     height: 40%;
-//     background-color: rgba(0,0,0,0.7);
-//     padding:2rem;
-//     border-radius: 2px;
-// }
-//  #hero .booking .title {
-//      text-transform: uppercase;
-//      text-align: center;
-//      font-size: 2rem;
-//      color: #fff;
-//  }
-//  #hero .booking .booking-form {
-//      height: 100%;
-//      width: 100%;
-//  }
-//  #hero .booking-form input {
-//      padding-left: 1rem;
-//      margin-top: 1rem;
-//      height: 15%;
-//      width: 100%;
-//      border-top: none;
-//      border-right: none;
-//      border-left: none;
-//      border-bottom: 0.10rem solid #00afef;
-//      background-color: transparent;
-//      color: #99D3FF;
-//      outline: none;
-//  }
-//  #hero .booking .booking-form .form-button {
-//      background-color: #00afef;
-//      color: #fff;
-//      margin-left: 25%;
-//      margin-top: 2rem;
-//      padding: 1rem 2rem;
-//      text-transform: uppercase;
-//      letter-spacing: 0.3rem;
-//      width: 50%;
-//      border: none;
-//      border-radius: 4px;
-//      outline: none;
-//      transition: 0.3s;
-//      font-weight: bold;
-//      font-size: 1.3rem;
-//  }
-//  #hero .booking .booking-form .form-button:hover {
-//      cursor: pointer;
-//  }
- ::-webkit-input-placeholder {color:rgba(255,255,255,0.6);}
- ::-moz-placeholder          {color:rgba(255,255,255,0.6);}/* Firefox 19+ */
- :-moz-placeholder           {color:rgba(255,255,255,0.6);}/* Firefox 18- */
- :-ms-input-placeholder      {color:rgba(255,255,255,0.6);}
-        /*/End*/
- .welcome {
-     padding: 5rem 0;
- }
- .welcome .row {
-     display: flex;
-     flex-wrap: wrap;
- }
- .welcome .row .col-6:nth-child(1){
-     background-image: url("../images/welcome-2.jpg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     width: 50%;
- }
- .welcome .row .col-6+.col-6 {
-     position: relative;
-     padding:10rem 5rem;
-     width: 50%;
- }
- .welcome .row .col-6+.col-6 .title {
-     font-family: "Sansita",sans-serif;
-     font-weight: 700;
-     font-style: italic;
-     font-size: 5rem;
-     color: #00afef;
- }
- .welcome .row .col-6+.col-6 .text {
-     padding: 0 1rem;
-     color: rgba(0,0,0,0.7);
-     margin: 5rem 0;
-     width: 55%;
-     font-size: 2rem;
- }
  .our-features {
      margin: 5rem 0;
  }
@@ -507,16 +429,6 @@ body {
         }
         
     }
-}
-#Facilities .title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Gotham Pro",sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 5rem;
-    letter-spacing: 0.5rem;
-    color: #373435;
 }
  #Facilities .title-info {
      text-align: center;
@@ -578,6 +490,12 @@ footer {
     padding: 7rem 0 0;
 }
 footer {
+    .title {
+        color: #fff;
+    }
+    .title-info {
+        color: rgba(255,255,255,0.5);
+    }
     a {
         color: #fff !important;
     }
@@ -889,12 +807,6 @@ footer .container .row {
 #rooms {
     background-color: #E8E8E8;
     padding: 5rem 0;
-    h2 {
-        text-align: center;
-        font-size: 3rem;
-        margin: 0 0 4rem;
-        color: #373435;
-    }
     .rooms__wrap {
         padding: 1rem;
     }
