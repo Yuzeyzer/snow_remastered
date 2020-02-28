@@ -37,18 +37,18 @@
     </div>
     <div class="nav-bottom">
         <div class="container flex jst-btw">
+            <div class="lang flex-center">
+                <ul class="flex">
+                    <li class="lang-items ru"><a href="#Ru" data-reload >RU</a></li>
+                    <li class="lang-items eng"><a href="#Eng" data-reload >ENG</a></li>
+                </ul>
+            </div>
         <ul class="nav-list">
             <li class="nav-list-items"><a href="#hero" id="nav">Главная</a></li>
             <li class="nav-list-items"><a href="#hostel-info" id="nav2">О нас</a></li>
             <li class="nav-list-items"><a href="#rooms" id="nav3">Комнаты</a></li>
             <li class="nav-list-items"><a href="#Facilities" id="nav4">Сервис</a></li>
         </ul>
-        <div class="lang flex-center">
-            <ul class="flex">
-                <li class="lang-items ru"><a href="#Ru" data-reload >RU</a></li>
-                <li class="lang-items eng"><a href="#Eng" data-reload >ENG</a></li>
-            </ul>
-        </div>
     </div>
     </div>
     </nav>
@@ -79,7 +79,7 @@
         </div>
     </div>
 </section>
-<section id="hostel-info">
+<section id="hostel-info" class="relative">
     <div class="container">
         <h3 class="title">Что такое <span class="Snow">Snow</span>Leo?</h3>
         <p class="title-info container">Это первый в Кыргызстане хостел, делающий путешествия доступными и комфортными, создавая для каждого гостя возможность почувствовать себя как дома, но самое главное стать причастным к защите снежных барсов и дикой природы.</h4>
@@ -549,8 +549,9 @@ c-30 -1 -52 -6 -49 -11 2 -4 23 -6 46 -5 l42 3 3 -52 3 -53 -101 0 -101 0 3
 </section>
 <section id="rooms">
     <div class="container">
-        <h2 class="title text-up-case">Наши комнаты</h2>
+        <h2 class="title text-up-case">Наш Хостел</h2>
         <p class="title-info container">Наш хостел ждет вас! Мы наполнили каждую комнату теплой и уютной атмосферой, позаботившись о самых нужных деталях для лучшего времяпровождения.</p>
+        <h3 class="rooms-sub-title">Комнаты</h3>
         <div class="row flex owl-carousel rooms__slider mx-1">
             <div class="rooms__wrap h100">
                 <div class="rooms__item">
@@ -562,10 +563,12 @@ c-30 -1 -52 -6 -49 -11 2 -4 23 -6 46 -5 l42 3 3 -52 3 -53 -101 0 -101 0 3
                                 </svg>                                
                         </div>              
                     </div>
+                    <div class="rooms__item_text">
                     <h3>Для 6 человек</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, amet.</p>
                     <div class="rooms_btns">
                     <a href="booking.html" class="rooms__btn">Бронировать</a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -579,11 +582,13 @@ c-30 -1 -52 -6 -49 -11 2 -4 23 -6 46 -5 l42 3 3 -52 3 -53 -101 0 -101 0 3
                                 </svg>                                
                         </div>              
                     </div>
+                    <div class="rooms__item_text">
                     <h3>Для 6 человек</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, amet.</p>
                     <div class="rooms_btns">
                     <a href="booking.html" class="rooms__btn">Бронировать</a>
-                    </div>
+                </div>    
+                </div>
                 </div>
             </div>
             <div class="rooms__wrap h100">
@@ -596,11 +601,13 @@ c-30 -1 -52 -6 -49 -11 2 -4 23 -6 46 -5 l42 3 3 -52 3 -53 -101 0 -101 0 3
                                 </svg>                                
                         </div>              
                     </div>
+                    <div class="rooms__item_text">
                     <h3>Для 6 человек</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, amet.</p>
                     <div class="rooms_btns">
                     <a href="booking.html" class="rooms__btn">Бронировать</a>
-                    </div>
+                </div>    
+                </div>
                 </div>
             </div>
             <div class="rooms__wrap h100">
@@ -613,10 +620,114 @@ c-30 -1 -52 -6 -49 -11 2 -4 23 -6 46 -5 l42 3 3 -52 3 -53 -101 0 -101 0 3
                                 </svg>                                
                         </div>              
                     </div>
+                    <div class="rooms__item_text">
                     <h3>Для 6 человек</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, amet.</p>
                     <div class="rooms_btns">
                     <a href="booking.html" class="rooms__btn">Бронировать</a>
+                </div>    
+                </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="rooms-sub-title">Кухня</h3>
+        <div class="row flex fl-wrap mx-1 kitchen">
+            <div class="rooms__wrap h100 col-8">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images/wepb/3-hostel-big.l0pPC.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
+                    </div>
+                </div>
+            </div>
+            <div class="rooms__wrap h100 col-4">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images/wepb/5-hostel-big.BkUtv.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
+                    </div>
+                </div>
+            </div>
+            <div class="rooms__wrap h100 col-6">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images/wepb/9-hostel-big.veybO.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
+                    </div>
+                </div>
+            </div>
+            <div class="rooms__wrap h100 col-6">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images//wepb/9-hostel-big.veybO.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="rooms-sub-title">Зал</h3>
+        <div class="row flex fl-wrap mx-1 hall">
+            <div class="rooms__wrap h100 col-3">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images/wepb/3-hostel-big.l0pPC.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
+                    </div>
+                </div>
+            </div>
+            <div class="rooms__wrap h100 col-3">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images/wepb/5-hostel-big.BkUtv.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
+                    </div>  
+                </div>
+            </div>
+            <div class="rooms__wrap h100 col-3">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images/wepb/9-hostel-big.veybO.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
+                    </div>
+                </div>
+            </div>
+            <div class="rooms__wrap h100 col-3">
+                <div class="rooms__item">
+                    <div class="room__img relative">
+                        <img src="./images//wepb/9-hostel-big.veybO.webp" alt="">
+                        <div class="room__img_star">
+                            <svg viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L29.6129 17.2746H47.7764L33.0818 27.9508L38.6946 45.2254L24 34.5491L9.30537 45.2254L14.9182 27.9508L0.223587 17.2746H18.3871L24 0Z" fill="#fff"/>
+                                </svg>                                
+                        </div>              
                     </div>
                 </div>
             </div>
@@ -697,209 +808,127 @@ c-30 -1 -52 -6 -49 -11 2 -4 23 -6 46 -5 l42 3 3 -52 3 -53 -101 0 -101 0 3
     </div>
 </div>
 </section>
+<section id="gallery">
+        <div class="row gallery flex fl-wrap">
+            <div class="col-3 gallery-wrapper gallery-slider owl-carousel">
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k1.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k2.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k3.JPG" alt="">
+                </a>
+            </div>
+            <div class="col-3 gallery-wrapper gallery-slider owl-carousel">
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k1.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k2.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k3.JPG" alt="">
+                </a>
+            </div>
+            <div class="col-3 gallery-wrapper gallery-slider owl-carousel">
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k1.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k2.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k3.JPG" alt="">
+                </a>
+            </div>
+            <div class="col-3 gallery-wrapper gallery-slider owl-carousel">
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k1.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k2.JPG" alt="">
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="./images/rooms/k3.JPG" alt="">
+                </a>
+            </div>
+        </div>
+</section>
 <div id="Testimonials">
     <div class="container">
         <h2 class="title">Отзывы о нас</h2>
-    <div class="row mx-1">
-        <div class="col-md-12">
+    <div class="row mx-1 container">
+        <div class="col-md-12 container">
             <div id="news-slider" class="owl-carousel">
                 <div class="post-slide">
-                    <ul class="post-info">
-                        <li>
-                            <i class="fa fa-tag"></i>
-                            <a href="#">php</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-calendar"></i>
-                            <a href="#">November 13 2019</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-comment"></i>
-                            <a href="#">1</a>
-                        </li>
-                    </ul>
-                    <div class="post-img">
-                        <img src="./images/client-1.jpg" alt="">
-                        <a href="#" class="read">
-                            Подробнее
-                        </a>
-                    </div>
                     <div class="post-content">
-                        <div class="post-author">
-                            <a href="#">
-                                <img src="./images/client-1.jpg" alt="">
-                            </a>
-                        </div>
                         <h3 class="post-title">Самое последние обновления</h3>
                         <p class="post-description">
                             В этом хостеле прям таки творятся чудеса, постоянно устраиваються какие - то ивенты в которых приятно участваовать, 100 и 10!!!
                         </p>
                     </div>
+                    <div class="post-img">
+                        <img src="./images/client-1.jpg" alt="">
+                    </div>
                 </div>
                 <div class="post-slide">
-                    <ul class="post-info">
-                        <li>
-                            <i class="fa fa-tag"></i>
-                            <a href="#">php</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-calendar"></i>
-                            <a href="#">November 13 2019</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-comment"></i>
-                            <a href="#">1</a>
-                        </li>
-                    </ul>
-                    <div class="post-img">
-                        <img src="./images/client-2.jpg" alt="">
-                        <a href="#" class="read">
-                            Подробнее
-                        </a>
-                    </div>
                     <div class="post-content">
-                        <div class="post-author">
-                            <a href="#">
-                                <img src="./images/client-2.jpg" alt="">
-                            </a>
-                        </div>
                         <h3 class="post-title">Самое последние обновления</h3>
                         <p class="post-description">
-                            Для меня, как работающего человека, очень важны тишина, качество кофе и удобство. К счастью, этот хостел обладает всеми этими качествами, из - за чего я провел отличные дни. Благодарен системе безопасности которая постоянно следит за порядком.
+                            Для меня, как работающего человека, очень важны тишина, качество кофе и удобство. К счастью, этот хостел обладает всеми этими качествами, из - за чего я провел отличные дни.
                         </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="./images/client-2.jpg" alt="">                      
                     </div>
                 </div>
                 <div class="post-slide">
-                    <ul class="post-info">
-                        <li>
-                            <i class="fa fa-tag"></i>
-                            <a href="#">php</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-calendar"></i>
-                            <a href="#">November 13 2019</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-comment"></i>
-                            <a href="#">1</a>
-                        </li>
-                    </ul>
-                    <div class="post-img">
-                        <img src="./images/client-3.jpg" alt="">
-                        <a href="#" class="read">
-                            Подробнее
-                        </a>
-                    </div>
                     <div class="post-content">
-                        <div class="post-author">
-                            <a href="#">
-                                <img src="./images/client-3.jpg" alt="">
-                            </a>
-                        </div>
                         <h3 class="post-title">Самое последние обновления</h3>
                         <p class="post-description">
                             Все Очень чисто и всегда застеляно. Все постояльцы хостела тоже очень дружелюбные оказались. Мне понравилось. Советую присмотреться к этому хостелу.
                         </p>
                     </div>
+                    <div class="post-img">
+                        <img src="./images/client-3.jpg" alt="">
+                    </div>
                 </div>
                 <div class="post-slide">
-                    <ul class="post-info">
-                        <li>
-                            <i class="fa fa-tag"></i>
-                            <a href="#">php</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-calendar"></i>
-                            <a href="#">November 13 2019</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-comment"></i>
-                            <a href="#">1</a>
-                        </li>
-                    </ul>
-                    <div class="post-img">
-                        <img src="./images/04.jpg" alt="">
-                        <a href="#" class="read">
-                            Подробнее
-                        </a>
-                    </div>
                     <div class="post-content">
-                        <div class="post-author">
-                            <a href="#">
-                                <img src="./images/04.jpg" alt="">
-                            </a>
-                        </div>
                         <h3 class="post-title">Самое последние обновления</h3>
                         <p class="post-description">
                             Просто отличное место!!! Уют, комфорт и простота, все что нужно для души. Очень благодарен этому хостелу
                             за отличное обслуживание и персонал. 11 из 10
                         </p>
                     </div>
+                    <div class="post-img">
+                        <img src="./images/04.jpg" alt="">
+                        
+                    </div>
                 </div>
                 <div class="post-slide">
-                    <ul class="post-info">
-                        <li>
-                            <i class="fa fa-tag"></i>
-                            <a href="#">php</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-calendar"></i>
-                            <a href="#">November 13 2019</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-comment"></i>
-                            <a href="#">1</a>
-                        </li>
-                    </ul>
-                    <div class="post-img">
-                        <img src="./images/06.jpg" alt="">
-                        <a href="#" class="read">
-                            Подробнее
-                        </a>
-                    </div>
                     <div class="post-content">
-                        <div class="post-author">
-                            <a href="#">
-                                <img src="./images/06.jpg" alt="">
-                            </a>
-                        </div>
                         <h3 class="post-title">Самое последние обновления</h3>
                         <p class="post-description">
                            Мне всегда нравились уютные хостелы с хорошим оформлением комнат, не жалею что приехал сюда.
                         </p>
                     </div>
+                    <div class="post-img">
+                        <img src="./images/06.jpg" alt="">
+                        
+                    </div>
                 </div>
                 <div class="post-slide">
-                    <ul class="post-info">
-                        <li>
-                            <i class="fa fa-tag"></i>
-                            <a href="#">php</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-calendar"></i>
-                            <a href="#">November 13 2019</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-comment"></i>
-                            <a href="#">1</a>
-                        </li>
-                    </ul>
-                    <div class="post-img">
-                        <img src="./images/01.jpg" alt="">
-                        <a href="#" class="read">
-                            Подробнее
-                        </a>
-                    </div>
                     <div class="post-content">
-                        <div class="post-author">
-                            <a href="#">
-                                <img src="./images/01.jpg" alt="">
-                            </a>
-                        </div>
                         <h3 class="post-title">Самое последние обновления</h3>
                         <p class="post-description">
                            Хозяка хостела очень приятная девушка, все обьяснила и со всем помогла. Я быстро смогла найти места для развлечений благодаря помощи Гульмиры, руководительницы хостела.
                         </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="./images/01.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -909,20 +938,30 @@ c-30 -1 -52 -6 -49 -11 2 -4 23 -6 46 -5 l42 3 3 -52 3 -53 -101 0 -101 0 3
 </div>
 <footer>
         <h2 class="title">Наши контакты</h3>
-        <p class="title-info">Вы можете связаться с нами по нижеукзаанным данным</p>
-        <div class="row">
-            <div class="col-12">
+        <p class="title-info container">Вы можете найти нас через карту, позвонить по указанном номеру, написать нам по почте, или Забронировать себе комнату через booking</p>
+        <div class="row flex fl-wrap">
+            <div class="col-6">
                 <div class="foot-item">
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.902151914763!2d74.64225551497788!3d42.85379921177085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7d08cf05c41%3A0x337637d751a783d0!2sSnow%20Leo%20Hostel!5e0!3m2!1sru!2skg!4v1582764757230!5m2!1sru!2skg" frameborder="0" style="border:0;" allowfullscreen="">
                     </iframe>
                     </div>
                 </div>
+                <div class="col-6">
+                    <div class="foot-item contacts">
+                        <ul>
+                            <li>Номер +996773152695</li>
+                            <li>Город Бишкек ул. Калмурзаева 302</li>
+                            <li><a href="">Наш инстаграм</a></li>
+                            <li>snowleohostel@booking.kg</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     <div class="foot-bottom">
-        <div class="container flex">
-            <div class="copyright"><p>Все права принадлежат ОсОО SnowLeoHostel.kg</p></div>
-            <div class="author"><a href="#">Made by Yuzeyzer</a></div>
+        <div class="container flex fl-wrap">
+            <div class="copyright col-6"><p>Все права защищены</p></div>
+            <div class="author col-6"><a href="#">Made by Yuzeyzer</a></div>
         </div>
     </div>
 </footer>

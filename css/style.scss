@@ -17,6 +17,9 @@ body {
      z-index: 2;
      background-color: white;
  }
+ .px-3 {
+    padding: 0 0.5rem;
+ }
  .nav {
      position: relative;
      display: flex;
@@ -34,6 +37,9 @@ body {
         height: 0;
         width: 100%;
         opacity: 0;
+        .nav-list {
+            width: auto;
+        }
     }
  }
  .black__block {
@@ -209,10 +215,30 @@ body {
          -o-transform: none;
      }
  }
+ .title {
+    position: relative;
+    text-align: center;
+    color: #373435;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    &::before{
+        content: '';
+        position: absolute;
+        max-width: 14rem;
+        height: 0.3rem;
+        background-color: #00afef;
+        right: 0;
+        left: 0;
+        bottom: -1.4rem;
+        margin: auto;
+    }
+}
  .logo {
      display: flex;
      height: 100%;
      width: 20%;
+     padding-left: 1rem;
      z-index: 0;
  }
  .logo-img {
@@ -226,14 +252,13 @@ body {
  .nav-list {
      display: flex;
      align-items: center;
-     width: 90%;
      font-size: 1.6rem;
      font-weight: 400;
      z-index: 1;
  }
  .nav-list .nav-list-items {
      position: relative;
-     margin-right: 2rem;
+     margin-left: 2rem;
      text-transform: uppercase;
  }
  .nav-list .nav-list-items:before {
@@ -256,16 +281,12 @@ body {
      color: #fff;
      white-space: nowrap;
  }
- .lang {
-     width: 10%;
- }
  .lang .lang-items {
      font-size: 1.4rem;
      margin-left: 1rem;
  }
  .lang .lang-items a {
      color: #fff;
-     font-weight: bold;
  }
  .ru {
      position: relative;
@@ -274,32 +295,24 @@ body {
      content: '';
      position: absolute;
      width: 100%;
-     height: 2px;
+     height: 0.2rem;
      bottom: -.5rem;
      background-color: #fff;
  }
             /*block-1*/
  #hostel-info {
-     padding: 17rem 0;
+     padding: 15rem 0;
      background: url(../images/Rectangle.png) center no-repeat;
      background-size: cover;
- }
-.title {
-     position: relative;
-     text-align: center;
-     color: #373435;
-     text-transform: uppercase;
-     font-size: 3.2rem;
-     &::before{
-         content: '';
+     overflow: visible;
+     &::before {
          position: absolute;
-         max-width: 14rem;
-         height: 0.3rem;
-         background-color: #00afef;
-         right: 0;
-         left: 0;
-         bottom: -1.4rem;
-         margin: auto;
+         content: '';
+         bottom: 2rem;
+         width: 100%;
+         height: 34rem;
+         background: url(../images/Vector1.png);
+         background-size: cover;
      }
  }
 .Snow {
@@ -311,6 +324,7 @@ body {
      font-size: 1.6rem;
      margin: 4rem auto 3rem;
  }
+ 
  #hostel-info .container .row .col-12 {
      padding-top: 4rem;
  }
@@ -322,12 +336,23 @@ body {
          position: absolute;
          bottom: 0;
          transform: translateY(50%);
-         right: 15%;
-         width: 15%;
+         right: 10%;
+         min-width: 4.5rem;
+         max-width: 10rem;
          svg {
              max-width: 100%;
          }
      }
+ }
+ .kitchen {
+     .room__img_star {
+         background-color: #00afef;
+     }
+ }
+ .hall {
+    .room__img_star {
+        background-color: #373435;
+    }
  }
  #hostel-info .container .row .col-12 .hostel-items {
      text-align: center;
@@ -426,8 +451,7 @@ body {
         padding-top: 5rem;
         .facilities__col {
             padding: 2rem;
-        }
-        
+        }       
     }
 }
  #Facilities .row {
@@ -438,21 +462,26 @@ body {
  .facilities__left {
      position: absolute;
      min-height: 40rem;
-     min-width: 40%;
-     background: url(../images/fc.jpeg) center no-repeat;
+     width: 50%;
+     background: url(../images/rooms/k8.JPG) center no-repeat;
      background-size: cover;
      right: 0;
      z-index: 1;
-     &::before {
-        content: '';
-        position: absolute;
-        top: 25%;
-        left: -18.5%;
-        height: 20rem;
-        width: 20rem;
-        background: url(../images/fc1.jpeg) center no-repeat;
-        background-size: cover;
-        z-index: 0;
+ }
+ #gallery {
+     padding: 0 0 0;
+     .owl-dots {
+         display: none;
+     }
+     .owl-nav {
+         display: none;
+     }
+     .gallery-item {    
+         img {
+             width: 100%;
+             height: 50rem;
+             object-fit: cover;
+         }
      }
  }
  .row .home-items {
@@ -488,24 +517,29 @@ footer {
     }
     .title-info {
         color: rgba(255,255,255,0.5);
-    }
-    a {
-        color: #fff !important;
+        width: 60%;
     }
 }
 footer .container .row {
     margin: 0 -1.5rem;
 }
 .foot-item {
-    height: 100%;
-    width: 100%;
     .map {
         min-height: 50rem;
         width: 100%;
     }
 }
-.foot-description {
-    padding: 2rem;
+.contacts {
+    padding: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    a {
+        color:#fff;
+    }
+    li {
+        margin-top: 2rem;
+        display: block;
+    }
 }
 .foot-title {
     text-transform: uppercase;
@@ -515,26 +549,6 @@ footer .container .row {
     font-weight: 500;
     letter-spacing: 0.1rem;
 }
-.foot-title-text {
-    margin: 3rem 0;
-    text-align: center;
-    font-size: 1.4rem;
-    color: #e0e0e0;
-    font-weight: 400;
-}
- .links-item a {
-     position: relative;
-     color:rgba(255,255,255,0.8);
- }
- .foot-contact {
-     height: 100%;
-     font-size: 1.5rem;
-     color: white;
- }
- .foot-contact .contact-list .ct-list {
-     display: block;
-     margin-top: 1.8rem;
- }
  .foot-bottom {
      padding: 2rem 0;
      background-color: rgba(0,0,0,0.9);
@@ -546,7 +560,7 @@ footer .container .row {
  .copyright {
      padding-top: 1rem;
      color: white;
-     font-size: 2rem;
+     font-size: 1.6rem;
      width: 50%;
  }
  .author {
@@ -558,54 +572,26 @@ footer .container .row {
      width: 25%;
  }
  .author a {
-     color: #868284;
+     color: rgba(255,255,255,0.3) !important;
+ }
+ #Testimonials {
+     padding: 10rem 0 5rem;
+     background-color: #E8E8E8;
+ }
+ #news-slider {
+     margin-top: 5rem;
  }
  .post-slide {
-     padding:5rem 0 3rem 0;
+     position: relative;
+     padding:1rem 0 3rem 0;
      margin: 0 1rem;
  }
- .post-slide .post-info {
-     padding: 0.5rem 0;
-     margin: 0;
-     list-style: none;
- }
- .post-slide .post-info li {
-     display: inline-block;
-     margin: 0 0.5rem;
- }
- .post-slide .post-info li i {
-     margin-right: 1rem;
- }
- .post-slide .post-info li a {
-     font-size: 1.1rem;
-     font-weight: bold;
-     color: dimgray;
-     text-transform: uppercase;
- }
- .post-slide .post-info li a:hover {
-     color: #00afef;
-     text-decoration: none;
- }
- .post-slide .post-img{
-     position: relative;
- }
- .post-slide .post-img:before {
-     content: '';
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top:0;
-     left: 0;
-     opacity: 0;
-     background: rgba(0,0,0,0.7);
-     transition: opacity 0.4s linear;
- }
- .post-slide:hover .post-img:before {
-     opacity: 1;
- }
  .post-slide .post-img img {
-     width: 100%;
-     height: auto;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     width: 20%;
+     border-radius: 50%;
  }
  .post-slide .read {
      position: absolute;
@@ -630,36 +616,17 @@ footer .container .row {
      border-color: #00afef;
  }
  .post-slide .post-content {
-     padding: 4rem 0;
+     background-color: #fff;
+     padding: 1rem;
+     min-height: 21rem;
+     max-height: 25rem;
      position: relative;
  }
-
- .post-slide .post-author {
-     width: 6rem;
-     height: 6rem;
-     border-radius: 50%;
-     position: absolute;
-     top: -3.5rem;
-     right: 1rem;
-     overflow: hidden;
-     border: 0.4rem solid #fff;
-     transition: 0.3s;
- }
- .post-slide .post-author img {
-     width: 100%;
-     height: auto;
- }
-.post-slide:hover .post-author {
-    top: -3.7rem;
-    right: 2rem;
-    width: 7rem;
-    height: 7rem;
- }
  .post-slide .post-title {
-     font-size: 14px;
+     font-size: 1.4rem;
      font-weight: bold;
-     color: #1dcfd1;
-     margin:0 0 10px 0;
+     color: #00afef;
+     margin:0 0 1rem 0;
      text-transform: uppercase;
      transition: all 0.3s linear 0s;
  }
@@ -668,25 +635,29 @@ footer .container .row {
      content: "";
      width:3.5rem;
      display: block;
-     margin-top: 10px;
-     border-bottom: 4px solid #222;
+     margin-top: 1rem;
+     border-bottom: 0.4rem solid #222;
  }
 
  .post-slide .post-description {
-     font-size: 14px;
+     font-size: 1.4rem;
      color: #373435;
      margin-bottom: 2rem;
      font-family: "Gotham Pro",sans-serif;
  }
+ @media screen and (max-width:1921px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1441px) {
+    html {
+        font-size: 10px;
+    }
+}
  @media screen and (max-width: 1199.98px) {
      html {
          font-size: 9px;
-     }
-     .container .row .col-3 {
-         width: 50%;
-     }
-     .row .col-1 {
-         width:25%;
      }
  }
  @media screen and (max-width: 991.98px) {
@@ -694,6 +665,7 @@ footer .container .row {
          font-size: 8px;
      }
      .logo {
+         padding: 0;
          width: 25%;
      }
      .nav.sticky {
@@ -711,6 +683,7 @@ footer .container .row {
      }
      .facilities__left {
          position: relative;
+         width: 100%;
      }
     .nav .social-info,.nav .contact-info,.lang {
         display: none;
@@ -733,7 +706,8 @@ footer .container .row {
         justify-content: center;
         position: fixed;
         height: 100vh;
-        width: 100%;
+       
+        width: 100vw !important;
         transform: translateX(150%);
         transition: 0.5s;
         z-index: 999;
@@ -742,7 +716,7 @@ footer .container .row {
         }
      }
  }
- @media screen and (max-width: 767.98px) {
+ @media screen and (max-width: 768.98px) {
     
      html {
          font-size: 9px;
@@ -793,22 +767,26 @@ footer .container .row {
         padding: 1.6rem 1.2rem;
       }
  }
- @media screen and (max-width:375.98px) {
-    
- }
-
 #rooms {
     background-color: #E8E8E8;
     padding: 5rem 0;
+    .rooms-sub-title {
+        font-size: 2.2rem;
+    }
     .rooms__wrap {
         padding: 1rem;
     }
     .rooms__item {
-        padding: 2rem;
-        background-color: #fff;      
+        border-radius: 0.5rem;
+        min-height: 28rem;
+        background-color: #fff; 
+        overflow: hidden; 
+        .rooms__item_text {
+            padding: 2rem;
+        }    
         img {
             max-height: 25rem;
-            border-radius: 0.5rem;
+            min-width: 100%;
             object-fit: cover;
         }
         h3 {
@@ -820,22 +798,6 @@ footer .container .row {
             font-size: 1.3rem;
             color: #B6B6B6;
             margin-bottom: 1rem;
-        }
-        .gallery {
-            font-family: "Sansita",sans-serif;
-            font-weight: 600;
-            text-align: center;
-            background-color: orange;
-            color: #fff;
-            font-size: 1.6rem;
-            padding: 1rem 3rem;
-            transition: 0.3s;
-            &:hover {
-                background-color: #fff;
-                color: orange;
-                box-shadow: inset 0 0 0 0.2rem orange;
-            }
-           
         }
         .rooms__btn {
             font-family: "Sansita",sans-serif;

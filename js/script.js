@@ -10,6 +10,47 @@
     // $('.lang-items a').on('click', function(e){
     //     e.preventDefault();
     // })
+    // function hoverCarousel(){
+    //     if (){}
+    // }
+    let gallery = $('.gallery')[0];
+//     let galleryItem = document.querySelectorAll('.gallery-item img');
+//     let wrapper = document.querySelectorAll('.gallery-wrapper');
+//    gallery.addEventListener("mouseover", function(event){
+//         let index = [...galleryItem].findIndex(el => el==event.target);
+//     })
+    $(".gallery-slider").owlCarousel({
+        items: 1,
+        pagination: false,
+        loop: true,
+        autoplayTimeout:2000
+    });
+    let slider = document.getElementsByClassName('gallery-slider')[0];
+    let galleryItem = document.querySelectorAll('.gallery-item img');
+    $('.gallery').on('mouseover', function(event){
+        var index = [...galleryItem].findIndex(el => el===event.target);       
+        var i = 0;
+        let number = 0;
+        var result;
+        for (i;i<index; i+=7){
+           number+=1;
+           result = number - 1
+        }
+        let IndexResult = $('.gallery-wrapper.owl-carousel')[result];
+        $(IndexResult).trigger('play.owl.autoplay',[2000]);
+    })
+    $('.gallery').on('mouseleave',function(event){
+        var index = [...galleryItem].findIndex(el => el===event.target);       
+        var i = 0;
+        let number = 0;
+        var result;
+        for (i;i<index; i+=7){
+           number+=1;
+           result = number - 1
+        }
+        let IndexResult = $('.gallery-wrapper.owl-carousel')[result];
+        $(IndexResult).trigger('stop.owl.autoplay');
+    });
     $("#news-slider").owlCarousel({
         items: 3,
         itemsDesktop: [1199, 3],
