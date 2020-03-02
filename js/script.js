@@ -1,4 +1,5 @@
 
+
     $('.mobile__btn').on('click', function(){
         $(this).toggleClass('mobile__btn_active');
         $('.nav-list').toggleClass('menu__active');
@@ -28,10 +29,10 @@
     let slider = document.getElementsByClassName('gallery-slider')[0];
     let galleryItem = document.querySelectorAll('.gallery-item img');
     $('.gallery').on('mouseover', function(event){
-        var index = [...galleryItem].findIndex(el => el===event.target);       
-        var i = 0;
+        let index = [...galleryItem].findIndex(el => el===event.target);       
+        let i = 0;
         let number = 0;
-        var result;
+        let result;
         for (i;i<index; i+=7){
            number+=1;
            result = number - 1
@@ -40,8 +41,8 @@
         $(IndexResult).trigger('play.owl.autoplay',[2000]);
     })
     $('.gallery').on('mouseleave',function(event){
-        var index = [...galleryItem].findIndex(el => el===event.target);       
-        var i = 0;
+        let index = [...galleryItem].findIndex(el => el===event.target);       
+        let i = 0;
         let number = 0;
         var result;
         for (i;i<index; i+=7){
@@ -156,7 +157,7 @@
             $(".toggle-wrap").addClass("sticky_2");
             $(".menu").addClass("sticky_2");
             $(".contact-info").addClass("none");
-            $(".logo, .bars, .logo-img,.logo-text,.Vertical,.social-info").addClass("none");
+            $(".logo, .bars, .logo-img,.logo-text,.Vertical, nav .social-info").addClass("none");
     
         } else {
             $(".nav").removeClass("sticky");
@@ -192,13 +193,13 @@ TweenMax.to('.blue__block',1.9, {
     ease:Power2.easeInOut
 })
 TweenMax.from('.hero__content_items h1',2.2, {
-    delay:2.6,
+    delay:2.2,
     y:20,
     opacity:0,
     ease:Expo.easeInOut
 })
-TweenMax.from('.hero__content_items p',1.1, {
-    delay:2.4,
+TweenMax.from('.hero__content_items p',2.1, {
+    delay:2.3,
     y:60,
     opacity:0,
     ease:Power2.easeInOut
@@ -228,10 +229,11 @@ TweenMax.from('.logo',1.6,{
     opacity:0,
     x:-20
 },3)
-TweenMax.from('.order',0.8,{
-    delay:3.1,
+TweenMax.from('.order',1.6,{
+    delay:2.5,
     opacity:0,
-    y:20
+    y:40,
+    ease:Power2.easeInOut
 })
 TweenMax.staggerFrom('.nav-list li',1, {
     delay:2.3,
@@ -243,11 +245,11 @@ TweenMax.staggerFrom('.lang-items',1, {
     y:-40,
     opacity:0,
 },0.1)
-TweenMax.staggerFrom('.social-icons li',1, {
-    delay:1.6,
-    x:-80,
-    opacity:0,
-},0.2)
+// TweenMax.staggerFrom('.social-icons li',1, {
+//     delay:1.6,
+//     x:-80,
+//     opacity:0,
+// },0.2)
     // let language = {
     //     RuTr: {
     //         Main:"Главная",

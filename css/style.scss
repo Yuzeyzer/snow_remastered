@@ -133,7 +133,7 @@ body {
         }
     }
 }
- .nav .social-info {
+.social-info {
      height: 50%;
      width: 33%;
      z-index: 1;
@@ -141,26 +141,35 @@ body {
          justify-content: flex-end;
      }
  }
- .nav .social-icons li {
+.social-icons li {
      margin-top: 2rem;
      position: relative;
      margin-left: 1.5rem;
      width: 5rem;
      height: 5rem;
-     border: 0.05rem solid rgba(0,0,0,0.3);
+     border: 0.09rem solid rgba(0,0,0,0.3);
      border-radius: 50%;
+     transition: 0.4s;
  }
- .nav .social-icons li a {
+.social-icons li:hover {
+    border: 0.09rem solid #00afef;
+    background-color: #00afef;
+    a .icon {
+        color: #fff;
+    }
+ }
+.social-icons li a {
      height: 100%;
      width: 100%;
  }
- .nav .social-icons li a .icon {
+.social-icons li a .icon {
      position: absolute;
      color: rgba(0,0,0,0.3);
      font-size: 2rem;
      left: 50%;
      transform: translateX(-50%) scale(1);
      top:1.5rem;
+     transition: 0.3s;
  }
  .nav .contact-info {
      width: 33%;
@@ -298,6 +307,14 @@ body {
      height: 0.2rem;
      bottom: -.5rem;
      background-color: #fff;
+ }
+ .eng:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    bottom: -.5rem;
+    background-color: #fff;
  }
             /*block-1*/
  #hostel-info {
@@ -485,12 +502,36 @@ body {
      .gallery-wrapper {
          width: 25%;
      }
-     .gallery-item {    
+     .gallery-item {
+         position: relative;
+         z-index: 1;
+         .insta-item-wrapper {            
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             width: 100%;
+             height: 20%;
+             background-color: #fff;
+             opacity: 0;
+             transition: 0.3s;
+             z-index: 0;
+             .insta-item {
+                 width: 20%;
+             }
+             i {
+                 color: #00afef;
+                 font-size: 2rem;
+             }
+         }    
          img {
              width: 100%;
              height: 30rem;
+             z-index: 2;
             
          }
+     }
+     .gallery-item:hover .insta-item-wrapper {
+         opacity: 1;
      }
  }
  .row .home-items {
@@ -534,6 +575,15 @@ footer .container .row {
     margin: 0 -1.5rem;
 }
 .foot-item {
+    .social-icons li {
+        margin-right: 1.5rem;
+        margin-left: 0;
+        border: none;
+        background-color: #00afef;
+        i {
+            color: #fff !important;
+        }
+    }
     .map {
         min-height: 50rem;
         width: 100%;
