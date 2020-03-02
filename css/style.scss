@@ -446,7 +446,13 @@ body {
  }
 #Facilities {
     padding: 15rem 0;
-    background-color: #fff;
+    background-color: #373435;
+    .title {
+        color: #fff;
+    }
+    .title-info {
+        color: rgba(255,255,255,0.8);
+    }
     .facilities__wrapper {
         padding-top: 5rem;
         .facilities__col {
@@ -476,11 +482,14 @@ body {
      .owl-nav {
          display: none;
      }
+     .gallery-wrapper {
+         width: 25%;
+     }
      .gallery-item {    
          img {
              width: 100%;
-             height: 50rem;
-             object-fit: cover;
+             height: 30rem;
+            
          }
      }
  }
@@ -502,9 +511,10 @@ body {
 }
 .items-title {
     font-size: 1.6rem;
+    font-weight: 400;
     margin-top: 3rem;
     text-transform: uppercase;
-    color: #373435;
+    color: #fff;
 }
                 /*/////Footer//////*/
 footer {
@@ -664,6 +674,9 @@ footer .container .row {
      html {
          font-size: 8px;
      }
+     .gallery-wrapper {
+        width: 50% !important;
+    }
      .logo {
          padding: 0;
          width: 25%;
@@ -751,6 +764,13 @@ footer .container .row {
      }
  }
  @media screen and (max-width:575.98px) {
+    .gallery-wrapper {
+        width: 100% !important;
+        img {
+            height: 40rem;
+            object-fit: cover;
+        }
+    }
      .row .col-1 img {
          width: 30%;
      }
@@ -772,6 +792,13 @@ footer .container .row {
     padding: 5rem 0;
     .rooms-sub-title {
         font-size: 2.2rem;
+        color: #373435;
+    }
+    .rooms-sub-info {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        width: 80%;
+        color: rgba(0,0,0,.6);
     }
     .rooms__wrap {
         padding: 1rem;
@@ -785,9 +812,8 @@ footer .container .row {
             padding: 2rem;
         }    
         img {
-            max-height: 25rem;
+            height: 25rem;
             min-width: 100%;
-            object-fit: cover;
         }
         h3 {
             margin: 2rem 0 1rem;
