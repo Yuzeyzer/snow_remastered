@@ -1,5 +1,3 @@
-
-
     $('.mobile__btn').on('click', function(){
         $(this).toggleClass('mobile__btn_active');
         $('.nav-list').toggleClass('menu__active');
